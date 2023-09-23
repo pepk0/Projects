@@ -6,20 +6,21 @@ I made this CLI script to help me with solving word puzzles from a popular bulga
 
 #### The App:
 > The app has 5 random letters and the goal is to create a valid word.
+> the problem is often you get stuck on a word and to get a hit, you need to sped money.  
+> The app look like this ⬇️
 
 ![app](https://i.imgur.com/6vNWu8F.jpg)
 
-> the problem is often you get stuck on a word and to get a hit, you need to sped money
 
 
 ### Usage:
 ---- 
 
-Whit no specified length option it will default to one
+Whit no specified length option the default length is three letters.
 ~~~  powershell
 wordy лонк
 ~~~  
-With -l we specify the length of the words we are searching for.
+With -l (length) we specify for a specific length.
 ~~~  powershell
 wordy лонк -l 4
 ~~~  
@@ -52,12 +53,13 @@ pip install -r requirements.txt
 
 in the functionality.py file you need to set the PATH = r"path to words.txt here" variable as the path to the words.txt that contains all the validated bulgarian words.
 
-To run this as a CLI whiteout changing using the word_helper.py command every time, we want to install this as a package.
+To run this as a CLI without using the py word_helper.py before running the CLI every time, we want to install this as a package.  
+This install it local in the virtual environment  
 ~~~  powershell
 pip install --editable .
 ~~~  
-To run this whiteout activating a venv or from the folder of the CLI you need to install the package globally.
+To run this without activating a venv or from the folder of the CLI you need to install the package globally.
 ~~~  powershell
 pip install --editable /path to the file location
 ~~~  
-Note. --editable lets you change code in the package
+Note. --editable lets you change code in the package.
