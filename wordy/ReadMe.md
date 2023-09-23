@@ -25,7 +25,7 @@ With -l (length) we specify for a specific length.
 wordy лонк -l 4
 ~~~  
 ~~~  powershell
-wordy лонк -l 3
+wordy ратпи -l 3
 ~~~  
 
 ![wordy, demo](https://i.imgur.com/DlVa1Fi.jpg)
