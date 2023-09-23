@@ -5,8 +5,9 @@ from a specified sequence of letters and length.
 I made this CLI script to help me with solving word puzzles from a popular bulgarian mobile app
 
 #### The App:
-> The app has 5 random letters and the goal is to create a valid word.
-> the problem is often you get stuck on a word and to get a hit, you need to sped money.  
+---
+> The app has some random letters and the goal is to create a valid word.
+> The problem is often you get stuck on a word and to get a hit, you need to sped money.  
 > The app look like this ⬇️
 
 ![app](https://i.imgur.com/6vNWu8F.jpg)
@@ -20,7 +21,7 @@ Whit no specified length option the default length is three letters.
 ~~~  powershell
 wordy лонк
 ~~~  
-With -l (length) we specify for a specific length.
+With -l we specify the generated words length.
 ~~~  powershell
 wordy лонк -l 4
 ~~~  
@@ -31,7 +32,7 @@ wordy ратпи -l 3
 ![wordy, demo](https://i.imgur.com/DlVa1Fi.jpg)
 
 ### Installation:
-
+----
 I made this as a pip installable package, so when installed globally you can call the CLI script just by "wordy"  
 To accomplish this we need to:  
 
@@ -64,4 +65,6 @@ To run this without activating a venv or from the folder of the CLI you need to 
 ~~~  powershell
 pip install --editable /path to the file location
 ~~~  
-Note. --editable lets you change code in the package.
+Note "--editable" lets you change code in the package.  
+
+----
