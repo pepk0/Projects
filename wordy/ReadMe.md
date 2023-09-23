@@ -56,7 +56,7 @@ pip install -r requirements.txt
 in the functionality.py file you need to set the PATH = r"path to words.txt here" variable as the path to the words.txt that contains all the validated bulgarian words.
 
 To run this as a CLI without using the py word_helper.py before running the CLI every time, we want to install this as a package.  
-This install it local in the virtual environment  
+This install it locally in the virtual environment  
 ~~~  powershell
 pip install --editable .
 ~~~  
