@@ -39,7 +39,7 @@ To accomplish this you need to first install the requirements.txt.
 First make a virtual environment in the terminal
 
 ~~~  powershell
-pip install -m venv .venv
+py install -m venv .venv
 ~~~  
 
 Then activate it
