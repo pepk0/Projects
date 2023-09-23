@@ -1,6 +1,6 @@
 from itertools import permutations as permut
 
-PATH = r"C:\Users\popov\Desktop\wordy\words.txt"
+PATH = r" " #  <<<< set text file path here
 
 def get_words(characters: str, digits=None) -> list:
     if digits == None:
