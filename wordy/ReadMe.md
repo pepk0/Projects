@@ -32,21 +32,23 @@ wordy лонк -l 3
 
 ### Installation:
 
-I made this as a pip installable package, so when installed globally you can call the CLI script just by "wordy"
+I made this as a pip installable package, so when installed globally you can call the CLI script just by "wordy"  
+To accomplish this we need to:  
 
-To accomplish this you need to first install the requirements.txt.  
-
-First make a virtual environment in the terminal
+First make a virtual environment in the terminal.
 
 ~~~  powershell
 py install -m venv .venv
 ~~~  
 
-Then activate it
+Then activate it.
+
 ~~~  powershell
 .venv\Scripts\activate
 ~~~  
+
 Then install the requirements.
+
 ~~~  powershell
 pip install -r requirements.txt
 ~~~  
