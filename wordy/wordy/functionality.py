@@ -13,7 +13,7 @@ def get_words(characters: str, digits=None) -> list:
 
 
 def validate_words(characters: str, digits=None) -> str:
-
+    
     words = get_words(characters, digits)
     results = ""
     with open(PATH, "r", encoding="utf-8") as valid_words:
@@ -21,6 +21,5 @@ def validate_words(characters: str, digits=None) -> str:
             word = word.strip()
             if word in words:
                 results += f"{word} "
-
 
     return f"\nНамерени думи: {results}\n"
