@@ -1,2 +1,2 @@
-# various_projects
-some simple, but fun, projects 
+# Various Projects
+> personal projects and projects alignments 
