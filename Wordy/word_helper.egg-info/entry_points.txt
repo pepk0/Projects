@@ -1,2 +1,0 @@
-[console_scripts]
-wordy = wordy.word_helper:word_helper

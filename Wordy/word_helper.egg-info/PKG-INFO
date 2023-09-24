@@ -1,6 +1,0 @@
-Metadata-Version: 2.1
-Name: word-helper
-Version: 0.0.1
-Author: Peter Popov
-Requires-Dist: Click
-Requires-Dist: prettytable
