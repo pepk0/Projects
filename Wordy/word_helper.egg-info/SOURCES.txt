@@ -1,0 +1,10 @@
+setup.py
+word_helper.egg-info/PKG-INFO
+word_helper.egg-info/SOURCES.txt
+word_helper.egg-info/dependency_links.txt
+word_helper.egg-info/entry_points.txt
+word_helper.egg-info/requires.txt
+word_helper.egg-info/top_level.txt
+wordy/__init__.py
+wordy/functionality.py
+wordy/word_helper.py
