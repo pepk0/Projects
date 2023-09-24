@@ -70,6 +70,6 @@ Note "--editable" lets you change code in the package.
 
 ### How it works:
 ---
-The scripts is fairly simple logic wise, it just takes the letter sequence and uses the in build python iter module's permutation function to generate permutations of the sequence letters, checking them from a list of 250k + validated Bulgarian words before returning them 
+The scripts is fairly simple logic wise, it just takes the letter sequence and uses the build in python itertools module, the permutation function generates permutations of the sequence letters, checking them from a list of 250k + validated Bulgarian words, after confirming a permutation is a valid word it returns it. 
 
 ----
