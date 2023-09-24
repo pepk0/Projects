@@ -2,12 +2,12 @@
 
 Simple CLI project, used to help with generating valid Bulgarian words  
 from a specified sequence of letters and length.
-I made this CLI script to help me with solving word puzzles from a popular bulgarian mobile app
+I made this CLI script to help me with solving word puzzles from a popular bulgarian mobile app.
 
-#### The App:
+### The App:
 ---
 > The app has some random letters and the goal is to create a valid word.
-> The problem is often you get stuck on a word and to get a hit, you need to sped money.  
+> The problem is often you get stuck on a word and to get a hint, you need to sped money.  
 > The app look like this ⬇️
 
 ![app](https://i.imgur.com/6vNWu8F.jpg)
@@ -66,5 +66,10 @@ To run this without activating a venv or from the folder of the CLI you need to 
 pip install --editable /path to the file location
 ~~~  
 Note "--editable" lets you change code in the package.  
+
+
+### How it works:
+---
+The scripts is fairly simple logic wise, it just takes the letter sequence and uses the in build python iter module's permutation function to generate permutations of the sequence letters, checking them from a list of 250k + validated Bulgarian words before returning them 
 
 ----
