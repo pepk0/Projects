@@ -35,9 +35,11 @@ def main():
     levels = {1: range(1, 11), 2: range(1, 26), 3: range(1, 36)}
     level = get_level(
         Fore.BLUE + "Pick a difficulty level: [1] [2] [3] or [0] to quit: ")
+    
     if level == 0:
         print(Fore.BLUE + "Thanks for playing!")
         return
+    
     secret_number = choice(levels[level])
     print(Fore.CYAN + f"I am thinking of a number in the {levels[level]}")
     time.sleep(0.5)
