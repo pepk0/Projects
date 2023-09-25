@@ -31,19 +31,19 @@ def main():
 
     guesses = 0
     total_guesses = 5
-    print(Fore.BLUE + "Welcome to Number Guesser!")
+    print(Fore.LIGHTYELLOW_EX + "Welcome to Number Guesser!")
     levels = {1: (1, 10), 2: (1, 25), 3: (1, 35)}
     level = get_level(
-        Fore.BLUE + "Pick a difficulty level: [1] [2] [3] or [0] to quit: ")
+        Fore.LIGHTYELLOW_EX + "Pick a difficulty level: [1] [2] [3] or [0] to quit: ")
 
     if level == 0:
-        print(Fore.BLUE + "Thanks for playing!")
+        print(Fore.LIGHTYELLOW_EX + "Thanks for playing!")
         return
 
     start, stop = levels[level]
     secret_number = randint(start, stop)
     print(Fore.CYAN +
-          f"I am thinking of a number in the range of {start} - {stop}")
+          f"I am thinking of a number in the range of {start} - {stop}... ")
     time.sleep(0.5)
     print(Fore.CYAN + "Done!")
 
@@ -58,8 +58,8 @@ def main():
             print(Fore.GREEN + f"You got! it took you {guesses} guesses!")
             return
     else:
-        print(Fore.RED + "Out of guesses!", Fore.BLUE + "Try again")
-        print(Fore.BLUE + "Thanks for playing!")
+        print(Fore.RED + "Out of guesses!", Fore.LIGHTYELLOW_EX + "Try again")
+        print(Fore.LIGHTYELLOW_EX + "Thanks for playing!")
         return
 
 
