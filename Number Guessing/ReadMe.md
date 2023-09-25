@@ -1,6 +1,6 @@
 # **Number Guesser**
 > this is a console number guessing game assignment project.  
-> created 
+
 ***
 
 #### **Description:**
