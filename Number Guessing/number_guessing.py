@@ -1,4 +1,4 @@
-from random import choice
+from random import randint
 import time
 import colorama
 from colorama import Fore
@@ -32,16 +32,18 @@ def main():
     guesses = 0
     total_guesses = 5
     print(Fore.BLUE + "Welcome to Number Guesser!")
-    levels = {1: range(1, 11), 2: range(1, 26), 3: range(1, 36)}
+    levels = {1: (1, 10), 2: (1, 25), 3: (1, 35)}
     level = get_level(
         Fore.BLUE + "Pick a difficulty level: [1] [2] [3] or [0] to quit: ")
-    
+
     if level == 0:
         print(Fore.BLUE + "Thanks for playing!")
         return
-    
-    secret_number = choice(levels[level])
-    print(Fore.CYAN + f"I am thinking of a number in the {levels[level]}")
+
+    start, stop = levels[level]
+    secret_number = randint(start, stop)
+    print(Fore.CYAN +
+          f"I am thinking of a number in the range of {start} - {stop}")
     time.sleep(0.5)
     print(Fore.CYAN + "Done!")
 
