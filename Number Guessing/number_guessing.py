@@ -47,6 +47,8 @@ def main():
     secret_number = randint(start, stop)
     print(Fore.CYAN +
           f"I am thinking of a number in the range of {start} - {stop}... ")
+    # pauses the program for 0.5 sec to create the illusion of the computer
+    # weighting for choice
     time.sleep(0.5)
     print(Fore.CYAN + "Done!")
 
