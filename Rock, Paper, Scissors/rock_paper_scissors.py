@@ -6,6 +6,7 @@ from random import randint
 
 
 def get_user_choice(prompt: str) -> int:
+    """"prompts the user for specific input = int in range 1-4"""
     while True:
         try:
             choice = int(input(prompt))
@@ -19,7 +20,7 @@ def get_user_choice(prompt: str) -> int:
 
 def print_winner(com_choice: int, play_choice: int, score: list,
                  choices: dict) -> PrettyTable:
-
+    """"gets the formats the output in a table, displays score"""
     table = PrettyTable()
     com_choice = choices[com_choice]
     play_choice = choices[play_choice]
@@ -32,8 +33,8 @@ def print_winner(com_choice: int, play_choice: int, score: list,
 
 
 def get_winner(computer: int, player: int) -> str:
+    """compares the results from the computer player"""
     winner = ""
-
     if computer == player:
         winner = "Draw"
     elif computer == 3 and player == 1:
@@ -56,7 +57,6 @@ def main():
     # makes the color default to normal after the print
     colorama.init(autoreset=True)
     # initializing pretty table
-    table = PrettyTable()
 
     prompt = ("\n[1]-Paper, "
               "[2]-Scissors, [3]-Rock, [4]-Quit - Please, enter your choice: ")
@@ -73,7 +73,8 @@ def main():
             break
 
         print("\nRock, Paper, Scissors 1.. 2.. 3..")
-        time.sleep(0.6)
+        # stops the program for 0.6 sec to se the illusion of choosing
+        time.sleep(0.6)  
         winner = get_winner(computer_choice, player_choice)
 
         if winner == "You":
