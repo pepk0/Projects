@@ -5,6 +5,7 @@ from colorama import Fore
 
 
 def get_level(prompt: str) -> int:
+    """Gets a input from user > int in the range 0-3"""
     while True:
         try:
             level = int(input(prompt))
@@ -17,6 +18,7 @@ def get_level(prompt: str) -> int:
 
 
 def take_guess(prompt: str) -> int:
+    """Gets a valid int input"""
     while True:
         try:
             guess = int(input(prompt))
@@ -26,15 +28,16 @@ def take_guess(prompt: str) -> int:
 
 
 def main():
-
+    # auto clear color from terminal output after each line
     colorama.init(autoreset=True)
 
     guesses = 0
     total_guesses = 5
-    print(Fore.LIGHTYELLOW_EX + "Welcome to Number Guesser!")
     levels = {1: (1, 10), 2: (1, 25), 3: (1, 35)}
+    print(Fore.LIGHTYELLOW_EX + "Welcome to Number Guesser!")
     level = get_level(
-        Fore.LIGHTYELLOW_EX + "Pick a difficulty level: [1] [2] [3] or [0] to quit: ")
+        Fore.LIGHTYELLOW_EX + 
+        "Pick a difficulty level: [1] [2] [3] or [0] to quit: ")
 
     if level == 0:
         print(Fore.LIGHTYELLOW_EX + "Thanks for playing!")
