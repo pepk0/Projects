@@ -56,7 +56,6 @@ def get_winner(computer: int, player: int) -> str:
 def main():
     # makes the color default to normal after the print
     colorama.init(autoreset=True)
-    # initializing pretty table
 
     prompt = ("\n[1]-Paper, "
               "[2]-Scissors, [3]-Rock, [4]-Quit - Please, enter your choice: ")
@@ -74,7 +73,7 @@ def main():
 
         print("\nRock, Paper, Scissors 1.. 2.. 3..")
         # stops the program for 0.6 sec to se the illusion of choosing
-        time.sleep(0.6)  
+        time.sleep(0.6)
         winner = get_winner(computer_choice, player_choice)
 
         if winner == "You":
