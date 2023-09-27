@@ -72,7 +72,8 @@ def main():
             break
 
         print("\nRock, Paper, Scissors 1.. 2.. 3..")
-        # stops the program for 0.6 sec to se the illusion of choosing
+        # pauses for 0.6 seconds to create the illusion
+        # of the computer picking a move
         time.sleep(0.6)
         winner = get_winner(computer_choice, player_choice)
 
