@@ -10,7 +10,7 @@ def get_user_choice(prompt: str) -> int:
     while True:
         try:
             choice = int(input(prompt))
-            if choice in range(1, 5):
+            if 1 <= choice <= 4:
                 return choice
             else:
                 raise ValueError

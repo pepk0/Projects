@@ -9,12 +9,12 @@ def get_level(prompt: str) -> int:
     while True:
         try:
             level = int(input(prompt))
-            if level in range(0, 4):
+            if 0 <= level <= 3:
                 return level
             else:
                 raise ValueError
         except ValueError:
-            print("Invalid integer (0, 1, 2, 3)")
+            print(Fore.RED + "Integer must be (0, 1, 2, 3)")
 
 
 def take_guess(prompt: str) -> int:
