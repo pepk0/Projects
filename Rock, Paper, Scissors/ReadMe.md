@@ -15,7 +15,7 @@ The game lets you chose your from four options,Rock, Paper, Scissors or Quit. Ba
 Make a virtual environment:
 
 ~~~ powershell
-py -m venv .venv
+py install -m venv .venv
 ~~~
 
 Activate the .venv
