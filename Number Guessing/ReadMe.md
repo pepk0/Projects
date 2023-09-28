@@ -20,7 +20,7 @@ To play, first we need to install the colorama module for the colored text.
 First create a virtual environment.
 
 ```` powershell
-py -m venv .venv
+py install -m venv .venv
 ````
 
 Then activate it.
