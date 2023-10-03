@@ -3,17 +3,19 @@
 
 ***
 
-#### **Description:**
-![Number Guesser](https://i.imgur.com/YukJFA9.gif)
+### **Description:**
+![Number Guesser](https://i.imgur.com/Be6f40V.gif)
 
-This game works fairly simple, it uses the python random module to generate a number from three ranges chosen by the player, then you have 5 chances to guess the number before you lose.
+This game works fairly simple, it uses the python random module to generate a number from three ranges chosen by the player:
     
-* 1 > Easy difficulty 1 - 10
-* 2 > Medium difficulty 1 - 25
-* 3 > Hard difficulty 1 - 35
+* easy difficulty 1 - 10
+* medium difficulty 1 - 25
+* hard difficulty 1 - 35  
+
+After the range is picked, you have 5 chances to guess the number before you lose.
 
 **** 
-#### Installation:
+### Installation:
 
 To play, first we need to install the colorama module for the colored text.
 
