@@ -4,7 +4,7 @@
 ***
 
 ### **Description:**
-![Number Guesser](https://i.imgur.com/Be6f40V.gif)
+![Number Guesser](https://i.imgur.com/WOkz0eR.gif)
 
 This game works fairly simple, it uses the python random module to generate a number from three ranges chosen by the player:
     
