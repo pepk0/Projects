@@ -1,9 +1,9 @@
-# **Various Projects**
+# **Simple Projects**
 
->  Personal projects and projects assignments  
+>  Personal projects and project assignments  
 >  Mostly simple and easy.  
 
-## **Table of content:**
+## **Table of contents:**
 
 | Project/Read Me | Description | Source Code|
 | --- | --- | --- |
