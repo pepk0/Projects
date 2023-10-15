@@ -50,6 +50,6 @@ def make_sentence() -> str:
     random_noun = get_random_noun()
     random_detail = get_random_detail()
     person = f"{random_name} from {random_place} "
-    action = f"{random_adverb} {random_verb} {random_noun} "
+    action = f"{random_adverb} {random_verb} a {random_noun} "
     detail = f"{random_detail}"
     return person + action + detail 
