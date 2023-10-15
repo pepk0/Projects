@@ -1,3 +1,7 @@
 /.vscode
 /.venv
 Wordy\word_helper.egg-info/
+.idea/vcs.xml
+.idea/various_projects.iml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
