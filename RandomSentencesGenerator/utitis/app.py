@@ -22,7 +22,7 @@ class App(tk.Tk):
             sentence_entry.delete(0, tk.END)
 
         label_frame = tk.LabelFrame(self,
-                                    text="random sentence", height=74,
+                                    text="🔽Random Sentence🔽", height=74,
                                     labelanchor="n", borderwidth=4,
                                     font=("Helvetica", 16), border=3)
 
@@ -30,6 +30,7 @@ class App(tk.Tk):
             label_frame, width=60, font=("Helvetica", 14),
             bg="systembuttonface", bd=0)
 
+        # frame for button placement
         button_frame = tk.Frame(self)
 
         randomize_button = ttk.Button(button_frame, text="Randomize", width=20,
@@ -37,6 +38,7 @@ class App(tk.Tk):
 
         clear_button = ttk.Button(button_frame, text="Clear", command=clear)
 
+        # placing all the widgets
         label_frame.pack(pady=20)
         sentence_entry.pack(pady=20, padx=5)
         button_frame.pack(pady=5)
