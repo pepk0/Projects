@@ -22,10 +22,9 @@ class App(tk.Tk):
         def clear() -> None:
             sentence_entry.delete(0, tk.END)
 
-        label_frame = tk.LabelFrame(self,
-                                    text="🔽Random Sentence🔽", height=74,
-                                    labelanchor="n", borderwidth=4,
-                                    font=("Helvetica", 16), border=3)
+        label_frame = tk.LabelFrame(
+            self, text="🔽Random Sentence🔽", height=74, labelanchor="n",
+            borderwidth=4, font=("Helvetica", 16), border=3)
 
         sentence_entry = tk.Entry(
             label_frame, width=60, font=("Helvetica", 14),
@@ -34,8 +33,9 @@ class App(tk.Tk):
         # frame for button placement
         button_frame = tk.Frame(self)
 
-        randomize_button = ttk.Button(button_frame, text="Randomize", width=20,
-                                      command=get_sentence)
+        randomize_button = ttk.Button(
+            button_frame, text="Randomize", width=20,
+            command=get_sentence)
 
         clear_button = ttk.Button(button_frame, text="Clear", command=clear)
 
