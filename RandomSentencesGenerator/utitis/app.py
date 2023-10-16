@@ -9,6 +9,7 @@ class App(tk.Tk):
         self.title("Random sentence generator")
         self.geometry("690x180")
         self.resizable(False, False)
+        self.iconbitmap(r"RandomSentencesGenerator\img\dice.ico")
 
         # method to generate the text from a function and place it
         # on the output frame
