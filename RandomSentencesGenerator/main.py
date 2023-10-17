@@ -1,4 +1,4 @@
-from utitis.app import App
+from utils.app import App
 
 
 def main():
