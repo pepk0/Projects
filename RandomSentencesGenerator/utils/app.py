@@ -1,4 +1,4 @@
-from utitis.functinality import make_sentence
+from utils.functinality import make_sentence
 import tkinter as tk
 from tkinter import ttk
 
@@ -15,6 +15,8 @@ class App(tk.Tk):
         # on the output frame
         def get_sentence() -> None:
             sentence = make_sentence()
+            if not sentence:
+                sentence = "Missing File Error"   
             sentence_entry.delete(0, tk.END)
             sentence_entry.insert(0, sentence)
 

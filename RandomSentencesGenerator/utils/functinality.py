@@ -9,7 +9,7 @@ def get_random_word(path: str) -> str:
     return lines[word_choice].strip()
 
 
-def make_sentence() -> str:
+def make_sentence() -> str | bool:
     sentence = ""
     file_paths = [
         r"RandomSentencesGenerator\text\names.txt",
@@ -21,9 +21,12 @@ def make_sentence() -> str:
     ]
 
     for index, file_path in enumerate(file_paths):
-        word = get_random_word(file_path)
-        if index == 0:
-            word = f"{word.capitalize()} from"
-        word = f"{word} "
-        sentence += word
+        try:
+            word = get_random_word(file_path)
+            if index == 0:
+                word = f"{word.capitalize()} from"
+            word = f"{word} "
+            sentence += word
+        except FileNotFoundError:
+            return False
     return sentence.strip()
