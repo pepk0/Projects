@@ -26,6 +26,8 @@ I made program to  help me with solving word puzzles from a popular bulgarian mo
     >the cache functionality uses a python dictionary to cache previous queries, future quires in the dictionary instantly returned
 * __Validate option__
     > this functionality validates the inputs, and sets the correct parameters if any are wrong
+* __File not found error message__
+    > Missing file or wrong file path, message is displayed if the file is missing or path is incorrect, instead of the program crashing
 ----
 
 ### How it works   
