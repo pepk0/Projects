@@ -6,7 +6,7 @@ from tkinter import ttk
 class App(tk.Tk):
     def __init__(self,):
         super().__init__()
-        self.title = "Wordy"
+        self.title("Word Helper")
         self.geometry("700x200")
         self.resizable(False, False)
         self.cache = {}

@@ -1,77 +1,37 @@
 # Wordy
 
-Simple CLI project, used to help with generating valid Bulgarian words  
+Simple project, used to help with generating valid Bulgarian words  
 from a specified sequence of letters and length.
-I made this CLI script to help me with solving word puzzles from a popular bulgarian mobile app.
+I made program to  help me with solving word puzzles from a popular bulgarian mobile app.
 
 ### The App:
----
-> The app has some random letters and the goal is to create a valid word.
-> The problem is often you get stuck on a word and to get a hint, you need to sped money.  
-> The app look like this ⬇️
+![app](https://i.imgur.com/6vNWu8F.jpg)  
 
-![app](https://i.imgur.com/6vNWu8F.jpg)
+> The mobile app has some random letters and the goal is to create a valid word.
+> The problem is often you get stuck on a word and to get a hint, you need to sped money.  
+----
 
 #### Quick Demo:
-
-
+![word_helper](https://i.imgur.com/YCFnT6z.gif)
 
 ### Usage:
 ---- 
+ * In the dropdown menu chose the desired length of characters.
+ * Enter the letter sequence in the input frame.
+ * Click the Generate button to get the found words.
 
-Whit no specified length option the default length is three letters.
-~~~  powershell
-wordy лонк
-~~~  
-With -l we specify the generated words length.
-~~~  powershell
-wordy лонк -l 4
-~~~  
-~~~  powershell
-wordy ратпи -l 3
-~~~  
-
-![wordy, demo](https://i.imgur.com/DlVa1Fi.jpg)
-
-### Installation:
+### Additional functionality
+---- 
+* __Cache functionality__
+    >the cache functionality uses a python dictionary to cache previous queries, future quires in the dictionary instantly returned
+* __Validate option__
+    > this functionality validates the inputs, and sets the correct parameters if any are wrong
 ----
-I made this as a pip installable package, so when installed globally you can call the CLI script just by "wordy"  
-To accomplish this we need to:  
 
-First make a virtual environment in the terminal.
-
-~~~  powershell
-py install -m venv .venv
-~~~  
-
-Then activate it.
-
-~~~  powershell
-.venv\Scripts\activate
-~~~  
-
-Then install the requirements.
-
-~~~  powershell
-pip install -r requirements.txt
-~~~  
-
-in the functionality.py file you need to set the PATH = r"path to words.txt here" variable as the path to the words.txt that contains all the validated bulgarian words.
-
-To run this as a CLI without using the py word_helper.py before running the CLI every time, we want to install this as a package.  
-This install it locally in the virtual environment  
-~~~  powershell
-pip install --editable .
-~~~  
-To run this without activating a venv or from the folder of the CLI you need to install the package globally.
-~~~  powershell
-pip install --editable /path to the file location
-~~~  
-Note "--editable" lets you change code in the package.  
-
-
-### How it works:
----
-The scripts is fairly simple logic wise, it just takes the letter sequence and uses the build in python itertools module, the permutation function generates permutations of the sequence letters, checking them from a list of 250k + validated Bulgarian words, after confirming a permutation is a valid word it returns it. 
+### How it works   
+this program uses a txt file of bulgarian words, when a queries is made whit a sequence of elements and a specific length a permutation function is called and all permutations with the given length are created and stored in a list, a validate word function is called and we loop trough the list of validated words and check if any of them match the permutations
 
 ----
+### Constrains
+while the program uses a list of 270k validated bulgarian words, some if the mobile apps words may not appear in the words list.
+
