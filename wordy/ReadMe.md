@@ -12,6 +12,8 @@ I made this CLI script to help me with solving word puzzles from a popular bulga
 
 ![app](https://i.imgur.com/6vNWu8F.jpg)
 
+#### Quick Demo:
+
 
 
 ### Usage:
