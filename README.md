@@ -1,7 +1,5 @@
-# **Simple Projects**
-
->  Personal projects and project assignments  
->  Mostly simple and easy.  
+# **Projects Assignments**
+>  Project assignments from Software University. 
 
 ## **Table of contents:**
 
