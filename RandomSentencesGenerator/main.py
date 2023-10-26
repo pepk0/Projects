@@ -1,4 +1,4 @@
-from utils.app import App
+from app.app import App
 
 
 def main():
