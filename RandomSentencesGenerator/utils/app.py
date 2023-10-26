@@ -14,9 +14,7 @@ class App(tk.Tk):
         # method to generate the text from a function and place it
         # on the output frame
         def get_sentence() -> None:
-            sentence = make_sentence()
-            if not sentence:
-                sentence = "Missing File Error"   
+            sentence = make_sentence()  
             sentence_entry.delete(0, tk.END)
             sentence_entry.insert(0, sentence)
 

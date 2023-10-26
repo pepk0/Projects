@@ -9,7 +9,7 @@ def get_random_word(path: str) -> str:
     return lines[word_choice].strip()
 
 
-def make_sentence() -> str | bool:
+def make_sentence() -> str:
     sentence = ""
     file_paths = [
         r"RandomSentencesGenerator\text\names.txt",
@@ -28,5 +28,5 @@ def make_sentence() -> str | bool:
             word = f"{word} "
             sentence += word
         except FileNotFoundError:
-            return False
+            return "Missing text file, or incorrect file path"
     return sentence.strip()
