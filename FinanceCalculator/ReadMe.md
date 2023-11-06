@@ -1,6 +1,7 @@
 # Finance Calculator
 > A simple command line finance calculator.
 ---
+
 The calculator has 5 options:  
  * 1.Calculate Simple Interest        
  * 2.Calculate Compound Interest        
