@@ -14,8 +14,8 @@ def make_sentence() -> str:
     file_paths = [
         "names.txt",
         "cities.txt",
-        "adverbs.txt", 
-        "verbs.txt", 
+        "adverbs.txt",
+        "verbs.txt",
         "nouns.txt",
         "details.txt"
     ]
