@@ -7,6 +7,6 @@ The calculator has 5 options:
  * 2.Calculate Compound Interest        
  * 3.Calculate Loan Payment  
  * 4.Calculate Future Value of Savings  
- * 5.Quit  
+ * 5.Quit
 
 Based on these options, we calculate the results and print them on the terminal.
